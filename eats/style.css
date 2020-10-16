@@ -1,0 +1,247 @@
+/*
+Theme Name: Eats.
+Author: Noah Lutz
+Version: 1
+Author URI: https://lutzinteractive.com/
+*/
+
+/* -- CSS Reset -- */
+
+html, body {
+	border: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+	border: none;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+}
+
+blockquote::before, blockquote::after {
+	content: "";
+}
+
+/* -- General CSS -- */
+
+/* Content Div */
+.site-content {
+	font-size: 14px;
+}
+/* Links */
+a {
+	color: #CC4B00;
+}
+/* Headings */
+h2 {
+	font-size: 36px;
+}
+
+/* -- Header -- */
+
+/* Title Area */
+.title-container {
+	background-color: #006EF5;
+	color: #FFFFFF;
+	display: flex;
+    align-items: center;
+	padding: 0 20px;
+}
+#home-link {
+	margin: 10px 15px 10px 20px;
+}
+#logo {
+    width: 45px;
+}
+
+/* Main Navigation */
+.menu-main-menu-container {
+	background-color: #004EAE;
+	padding: 0 20px;
+}
+#menu-btn {
+	display: none;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url('/wp-content/themes/eats/images/menu.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+}
+#menu-btn.active {
+	background: url('/wp-content/themes/eats/images/close.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+	background-color: #004EAE;
+}
+#menu-btn:focus {
+	outline: none;
+}
+.main-nav {
+	display: flex;
+}
+.main-nav li {
+	display: inline-flex;
+}
+.main-nav a {
+	color: #FFFFFF;
+	font-size: 18px;
+	padding: 15px 20px;
+	transition: background .5s;
+}
+.current_page_parent,
+.main-nav a:hover {
+	background-color: #013371;
+}
+.main-nav .current_page_parent a,
+.main-nav .current-menu-item a {
+	color: #FFC700;
+}
+
+/* -- Site Content -- */
+/* Blog Listing */
+.blog-listing {
+	display: flex;
+	max-width: 1200px;
+    margin: 0 auto;
+}
+.post-thumbnail {
+	margin: 20px 20px 20px 40px;
+	max-width: 740px;
+	width: calc(600px + (740 - 600) * ((100vw - 1024px) / (1200 - 1024)));
+	object-fit: cover;
+    object-position: left;
+}
+.blog-date {
+	margin-bottom: 5px;
+}
+.blog-details {
+    max-width: 350px;
+    margin: 40px 40px 40px 0;
+}
+.blog-excerpt {
+	line-height: 21px;
+    margin: 10px 0;
+}
+.read-more {
+	display: flex;
+	align-items: center;
+}
+.read-more img {
+	margin: 0 5px;
+}
+.read-more:hover img {
+	-moz-animation-name: cheveronShuffle;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1.0s;
+
+    -webkit-animation-name: cheveronShuffle;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1.0s;
+
+    animation-name: cheveronShuffle;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1.0s;
+}
+@-moz-keyframes cheveronShuffle {
+    0% {
+        -moz-transform: translateX(0);
+    }
+	50% {
+		-moz-transform: translateX(3px);
+    }
+    100% {
+        -moz-transform: translateX(0);
+    }
+}
+@-webkit-keyframes cheveronShuffle {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+	50% {
+		-webkit-transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes cheveronShuffle {
+	0% {
+        transform: translateX(0);
+    }
+	50% {
+		transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* -- CSS Modifiers -- */
+.show {
+	display: block;
+}
+
+/* -- Media Queries -- */
+
+/* Tablet CSS */
+@media only screen and (max-width: 768px) {
+	
+	/* Blog Listing Tablet */
+	.blog-listing {
+		display: block;
+	}
+	.post-thumbnail {
+		width: calc(100% - 40px);
+    	margin: 20px;
+	}
+	.blog-details {
+		max-width: none;
+		margin: 0 20px;
+	}
+	.read-more img {
+		margin: 0;
+	}
+	
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 580px) {
+	
+	/* Header Mobile */
+	.title-container,
+	.menu-main-menu-container {
+		padding: 0;
+	}
+	#menu-btn {
+		display: block;
+	}
+	.main-nav,
+	.site-title {
+		display: none;
+	}
+	#home-link {
+		margin: 10px auto;
+	}
+	.main-nav li {
+		display: flex;
+	}
+	.main-nav li:not(:first-child) {
+		border-top: solid 1px #5488c8;
+	}
+	
+	/* CSS Modifiers Mobile */
+	.show {
+		display: block;
+	}
+	
+}
