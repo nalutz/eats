@@ -59,13 +59,13 @@ header {
 }
 #home-link {
 	display: flex;
-    margin: 10px 15px 10px 20px;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
+	margin: 10px 15px 10px 20px;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
 }
 #logo {
-    width: 45px;
+	width: 45px;
 }
 .site-title {
 	margin-left: 15px;
@@ -83,12 +83,12 @@ header {
 	height: 60px;
 	background: url('/wp-content/themes/eats/images/menu.svg');
 	background-repeat: no-repeat;
-    background-position: center;
+	background-position: center;
 }
 #menu-btn.active {
 	background: url('/wp-content/themes/eats/images/close.svg');
 	background-repeat: no-repeat;
-    background-position: center;
+	background-position: center;
 	background-color: #004EAE;
 }
 #menu-btn:focus {
@@ -122,21 +122,21 @@ header {
 .blog-listing {
 	display: flex;
 	max-width: 1200px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 .post-thumbnail {
 	margin: 20px 20px 20px 40px;
 	max-width: 740px;
 	width: calc(600px + (740 - 600) * ((100vw - 1024px) / (1200 - 1024)));
 	object-fit: cover;
-    object-position: left;
+	object-position: left;
 }
 .blog-date {
 	margin-bottom: 5px;
 }
 .blog-details {
     max-width: 350px;
-    margin: 40px 40px 40px 0;
+	margin: 40px 40px 40px 0;
 }
 .blog-excerpt {
 	line-height: 21px;
@@ -151,51 +151,51 @@ header {
 }
 .read-more:hover img {
 	-moz-animation-name: cheveronShuffle;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in;
-    -moz-animation-duration: 1.0s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-duration: 1.0s;
 
-    -webkit-animation-name: cheveronShuffle;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: 1.0s;
+	-webkit-animation-name: cheveronShuffle;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-duration: 1.0s;
 
-    animation-name: cheveronShuffle;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1.0s;
+	animation-name: cheveronShuffle;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 1.0s;
 }
 @-moz-keyframes cheveronShuffle {
-    0% {
-        -moz-transform: translateX(0);
+	0% {
+		-moz-transform: translateX(0);
     }
 	50% {
 		-moz-transform: translateX(3px);
     }
-    100% {
-        -moz-transform: translateX(0);
+	100% {
+		-moz-transform: translateX(0);
     }
 }
 @-webkit-keyframes cheveronShuffle {
-    0% {
-        -webkit-transform: translateX(0);
+	0% {
+		-webkit-transform: translateX(0);
     }
 	50% {
 		-webkit-transform: translateX(3px);
     }
-    100% {
-        -webkit-transform: translateX(0);
+	100% {
+		-webkit-transform: translateX(0);
     }
 }
 @keyframes cheveronShuffle {
 	0% {
-        transform: translateX(0);
+		transform: translateX(0);
     }
 	50% {
 		transform: translateX(3px);
     }
-    100% {
-        transform: translateX(0);
+	100% {
+		transform: translateX(0);
     }
 }
 
