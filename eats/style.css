@@ -160,24 +160,24 @@ h2 {
 	animation-duration: 1.0s;
 }
 @-moz-keyframes cheveronShuffle {
-    0% {
+	0% {
 		-moz-transform: translateX(0);
     }
 	50% {
 		-moz-transform: translateX(3px);
     }
-    100% {
+	100% {
 		-moz-transform: translateX(0);
     }
 }
 @-webkit-keyframes cheveronShuffle {
-    0% {
+	0% {
 		-webkit-transform: translateX(0);
     }
 	50% {
 		-webkit-transform: translateX(3px);
     }
-    100% {
+	100% {
 		-webkit-transform: translateX(0);
     }
 }
@@ -188,7 +188,7 @@ h2 {
 	50% {
 		transform: translateX(3px);
     }
-    100% {
+	100% {
 		transform: translateX(0);
     }
 }
