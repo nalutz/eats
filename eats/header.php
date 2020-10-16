@@ -10,8 +10,8 @@
 		<header>
 			<div class="title-container">
 				<button id="menu-btn"></button>
-				<a id="home-link" href="/"><img id="logo" src="/wp-content/themes/eats/images/logo.svg" /></a>
-				<h1 class="site-title"><?php echo get_bloginfo( 'name' ); ?></h1>
+				<a id="home-link" href="/"><img id="logo" src="/wp-content/themes/eats/images/logo.svg" />
+				<h1 class="site-title"><?php echo get_bloginfo( 'name' ); ?></h1></a>
 			</div>
 				<?php //get main nav menu
 				wp_nav_menu( array( 
